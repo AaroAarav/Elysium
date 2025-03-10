@@ -6,7 +6,7 @@ function Nav() {
     <>
     <nav className="p-10 text-white flex bg-[#451f55] items-center font-semibold relative ">
         <div className="absolute left-5">
-            <img src="photos\elysium.png" alt="Logo" className="h-30" />
+            <img src="photos\elysium.png" alt="Elysium" className="h-30" />
         </div>
         <div className="flex text-xl gap-10 mx-auto ">
             <NavLink className="hover:underline" style={(e)=>{
