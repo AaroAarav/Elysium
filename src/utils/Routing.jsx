@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom";
 function Routing() {
   return (
     <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Events" element={<Events />} />
         <Route path="/Ambassadors" element={<Ambassadors />} />
