@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function KeyStats() {
   return (
-    <div className="w-full min-h-screen bg-black text-white flex items-center justify-center relative overflow-hidden px-10">
+    <div className="w-full min-h-screen bg-black bg-gradient-to-b from-black via-purple-950 to-black text-white flex items-center justify-center relative overflow-hidden px-10">
       <motion.div
         className="text-gray-300 w-full max-w-4xl text-left"
         initial={{ opacity: 0, y: 50 }}

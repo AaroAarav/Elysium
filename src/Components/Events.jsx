@@ -2,67 +2,68 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const events = [
-  {
-    id: 1,
-    title: "Tech Conference 2025",
-    image: "/images/tech-conference.jpg",
-    description: "Join industry leaders to discuss the latest in technology.",
-  },
+  
   {
     id: 2,
-    title: "Startup Pitch Night",
+    title: "TechEden: A Premier Tech Symposium",
     image: "/images/startup-pitch.jpg",
-    description: "Watch emerging startups pitch their ideas to investors.",
+    description: "A dynamic gathering of industry leaders and tech enthusiasts, diving into the latest trends in Al, blockchain, and cutting-edge innovations that are shaping tomorrow.",
   },
   {
     id: 3,
-    title: "AI & ML Summit",
+    title: "NextTech: Computing Session",
     image: "/images/ai-ml-summit.jpg",
-    description: "Explore advancements in artificial intelligence and machine learning.",
+    description: "Discover the future of computing with quantum technologies and photonics, and explore their power to solve today's most pressing challenges.",
   },
   {
     id: 4,
-    title: "Blockchain Expo",
+    title: "FutureSync: Drone Building and Robotics Session",
     image: "/images/blockchain-expo.jpg",
-    description: "Learn about the future of decentralized finance and Web3.",
+    description: "A hands-on workshop where participants get to design and build drones and robotics, applying creativity and problem-solving to real-world challenges.",
   },
   {
     id: 5,
-    title: "Cybersecurity Forum",
+    title: "DataPulse: Mock Quant Datathon",
     image: "/images/cybersecurity-forum.jpg",
-    description: "Stay updated on the latest trends in cybersecurity.",
+    description: "An intense, high-energy datathon where participants analyze real-world datasets, applying quantitative methods to tackle complex financial and analytical challenges.",
   },
   {
     id: 6,
-    title: "Women in Tech Summit",
+    title: "Binary Bloom: Web3 Development Indulgence",
     image: "/images/women-in-tech.jpg",
-    description: "Empowering women in the technology industry.",
+    description: "Delve into the world of blockchain and Web3, learning to create decentralized solutions that are set to transform industries and everyday life.",
   },
   {
     id: 7,
-    title: "E-Sports Championship",
+    title: "Pandora: AR/VR Workshop for Innovators",
     image: "/images/esports-championship.jpg",
-    description: "Witness the top gamers compete in an intense battle.",
+    description: "Step into the immersive world of AR/VR, where participants will create and experiment with technologies that are reshaping industries and experiences.",
   },
   {
     id: 8,
-    title: "VR & AR Innovations",
+    title: "Artemis: Mental Health Check-In",
     image: "/images/vr-ar.jpg",
-    description: "Experience the latest in virtual and augmented reality.",
+    description: "An empowering session dedicated to mental wellness, offering tools and strategies to manage stress, build resilience, and maintain balance in today's fast-paced world. ",
+  },
+  {
+    id: 9,
+    title: "HardWired",
+    image: "/images/vr-ar.jpg",
+    description: "A creative competition that challenges participants to design innovative, practical projects using Arduino, pushing the boundaries of technology and hands-on development.",
   },
 ];
 
 function Events() {
   return (
-    <div className="w-full min-h-screen bg-black text-white flex flex-col items-center py-10 justify-center relative overflow-hidden">
+    <div className="w-full min-h-screen bg-black text-white flex flex-col items-center py-10 justify-center relative overflow-hidden bg-gradient-to-b from-black via-purple-950 to-black">
       <h1 className="text-5xl mb-10 py-10 text-center text-purple-500 font-bold">
-        Upcoming Events
+        Upcoming <span className="text-pink-500">Events</span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-3/4">
         {events.map((event, index) => (
           <motion.div 
             key={event.id} 
-            className="bg-gray-900 p-5 rounded-lg shadow-lg border border-purple-500"
+            className="bg-gray-900 p-5 rounded-lg text-center shadow-lg border border-purple-500"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
