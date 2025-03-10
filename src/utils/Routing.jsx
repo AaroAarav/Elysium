@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 import Home from "../Components/Home";
 import Events from "../Components/Events";
 import Ambassadors from "../Components/Ambassadors";
 import About from "../Components/About";
 import KeyStats from "../Components/KeyStats";
 import ContactUs from "../Components/ContactUs";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 function Routing() {
   return (
     <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/" element={<Navigate to="/Home" replace />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Events" element={<Events />} />
         <Route path="/Ambassadors" element={<Ambassadors />} />
@@ -18,7 +18,7 @@ function Routing() {
         <Route path="/KeyStats" element={<KeyStats />} />
         <Route path="/ContactUs" element={<ContactUs />} />
     </Routes>
-  )
+  );
 }
 
-export default Routing
+export default Routing;
