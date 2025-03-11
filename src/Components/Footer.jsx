@@ -22,9 +22,9 @@ function Footer() {
       
       <div className="flex-1 flex flex-col gap-2 items-center">
         <h2 className="text-purple-400 font-bold">Contact Us</h2>
-        <p>Email: contact@elysium.com</p>
-        <p>Phone: +123 456 7890</p>
-        <p>Address: 123 Elysium Street, Tech City</p>
+        <p>Email: Elysium.muj@gmail.com</p>
+        <p>Phone: +91 95999 28296</p>
+        <p>IEEE WIE, Manipal Univeristy Jaipur</p>
       </div>
     </footer>
   );
