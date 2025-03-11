@@ -1,13 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import elysium from '/../../photos/elysium.png'
 
 function Nav() {
   return (
     <>
     <nav className="p-10 text-white flex bg-[#451f55] items-center font-semibold relative ">
         <div className="absolute left-5">
-            <img src={elysium} alt="Elysium" className="h-30" />
+            <img src="src\\Components\\photos\\elysium.png" alt="Elysium" className="h-30" />
         </div>
         <div className="flex text-xl gap-10 mx-auto ">
             <NavLink className="hover:underline" style={(e)=>{
