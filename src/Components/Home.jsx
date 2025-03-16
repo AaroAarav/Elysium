@@ -4,12 +4,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const images = [
-  "public/e1.jpg",
-  "public/e2.jpg",
-  "public/e3.jpg",
-  "public/e4.jpg",
-  "public/e5.jpg",
-  "public/e6.jpg",
+  "/e1.jpg",
+  "/e2.jpg",
+  "/e3.jpg",
+  "/e4.jpg",
+  "/e5.jpg",
+  "/e6.jpg",
 ];
 
 const IMAGES_PER_SLIDE = 3;
