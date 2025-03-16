@@ -17,7 +17,7 @@ function About() {
       </motion.p>
 
       <motion.p 
-        className="text-gray-300 w-3/4 text-center"
+        className="text-gray-300 pt-30 w-3/4 text-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

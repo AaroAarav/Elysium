@@ -17,7 +17,7 @@ function Footer() {
       </div>
 
       <div className="flex-1 flex justify-center">
-        <img src="src\Components\photos\elysium.png" alt="Elysium Logo" className="h-35" />
+        <img src="public/elysium.png" alt="Elysium Logo" className="h-35" />
       </div>
       
       <div className="flex-1 flex flex-col gap-2 items-center">
