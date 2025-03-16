@@ -13,7 +13,7 @@ function Footer() {
           <Link to="/keystats" className="hover:text-white">Key Stats</Link>
           <Link to="/ambassadors" className="hover:text-white">Community</Link>
           <Link to="/about" className="hover:text-white">About</Link>
-          <Link to="/contact-us" className="hover:text-white">Contact Us</Link>
+          <Link to="/contactus" className="hover:text-white">Contact Us</Link>
         </div>
       </div>
 
