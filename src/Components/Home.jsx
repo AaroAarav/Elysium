@@ -60,7 +60,7 @@ function Home() {
   };
 
   return (
-    <div className="w-full min-h-screen text-white flex flex-col items-center justify-center bg-cover bg-center relative">
+    <div className="w-full min-h-screen text-white flex flex-col items-center justify-center bg-black bg-cover bg-center relative">
       <video
         autoPlay
         loop
