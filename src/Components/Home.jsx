@@ -60,13 +60,13 @@ function Home() {
   };
 
   return (
-    <div className="w-full min-h-screen text-white flex flex-col items-center justify-center bg-black bg-cover bg-center relative">
+    <div className="w-full min-h-screen text-white flex flex-col items-center justify-center bg-cover bg-center relative">
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover -z-1"
+        className="absolute  bg-black top-0 left-0 w-full h-full object-cover -z-1"
       >
         <source src="vid.mp4" type="video/mp4" />
       </video>
