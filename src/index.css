@@ -1,1 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 @import "tailwindcss";
+
+
+.font-neon {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* Neon Glow Animation */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(138, 43, 226, 1), 0 0 40px rgba(138, 43, 226, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.6);
+  }
+}
+
+.neon-box {
+  border: 2px solid rgba(138, 43, 226, 0.6);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: pulseGlow 1.5s infinite alternate;
+}
+
+.neon-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px currentColor;
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 5px #690661, 0 0 10px #f308df, 0 0 15px #ed68d5;
+  }
+  50% {
+    text-shadow: 0 0 10px #f308df, 0 0 20px #ed68d5, 0 0 30px #690661;
+  }
+  100% {
+    text-shadow: 0 0 5px #ed68d5, 0 0 10px #690661, 0 0 15px #f308df;
+  }
+}
+
+.neon-text {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  animation: neonGlow 2s infinite alternate;
+}

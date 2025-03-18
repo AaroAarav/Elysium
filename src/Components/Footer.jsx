@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Use 'next/link' if using Next.js
+import { Link } from "react-router-dom"; 
 
 function Footer() {
   return (

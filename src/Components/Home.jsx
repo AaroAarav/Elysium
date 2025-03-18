@@ -3,7 +3,14 @@ import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const images = ["/e1.jpg", "/e2.jpg", "/e3.jpg", "/e4.jpg", "/e5.jpg", "/e6.jpg"];
+const images = [
+  "/e1.jpg",
+  "/e2.jpg",
+  "/e3.jpg",
+  "/e4.jpg",
+  "/e5.jpg",
+  "/e6.jpg",
+];
 
 const IMAGES_PER_SLIDE = 3;
 
@@ -69,25 +76,30 @@ function Home() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-8xl font-extrabold text-white my-10"
+          className="text-5xl md:text-9xl font-extrabold text-white my-10"
         >
-          <h2 className="text-purple-400 text-lg md:text-xl font-bold py-5">
+          <h2 className="text-purple-400 text-lg md:text-xl font-neon font-bold py-5">
             IEEE WIE PRESENTS
           </h2>
-          <span className="relative text-white bg-black/70 px-4 py-2 rounded-lg glow-effect">
+          <span className="relative neon-text font-neon text-white bg-black/70 px-4 py-2 rounded-lg neon-glow">
             ELYSIUM
           </span>
         </motion.h1>
 
         <p className="max-w-3xl text-sm md:text-lg bg-black/70 text-gray-300 mt-5 md:mt-10 px-4 py-2 rounded-lg">
-          Empowering Women to Lead, Inspiring Innovation to Thrive, and Shaping a Future of Inclusivity, Creativity, and Excellence in STEM.
+          Empowering Women to Lead, Inspiring Innovation to Thrive, and Shaping
+          a Future of Inclusivity, Creativity, and Excellence in STEM.
         </p>
 
         <Link to="/events">
           <button
-            className="mt-6 px-6 py-3 md:px-8 md:py-4 uppercase font-bold text-white text-sm md:text-lg 
-                   bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg shadow-lg 
-                   transition-all duration-300 hover:scale-105 hover:brightness-125"
+            className="relative mt-6 px-8 py-4 uppercase font-bold text-white text-sm md:text-lg 
+               rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110 
+               bg-gradient-to-r from-purple-500 to-blue-500
+               before:absolute before:inset-0 before:rounded-lg 
+               before:border-2 before:border-purple-400 before:opacity-40
+               before:transition-opacity before:duration-300 before:hover:opacity-100 
+               neon-box font-neon"
           >
             Register Now
           </button>
@@ -96,17 +108,23 @@ function Home() {
 
       {/* Stats  */}
       <div className="w-full flex flex-wrap justify-center gap-6 bg-black/70 p-6 md:p-10 rounded-lg">
-        <div className="border border-purple-400 p-6 md:p-10 rounded-lg text-center">
-          <h3 className="text-3xl md:text-4xl font-semibold">6+</h3>
-          <p className="text-sm md:text-base">Workshops covering AI, blockchain, and more.</p>
+        <div className="neon-box border-purple-400 text-purple-400">
+          <h3 className="neon-text text-4xl md:text-5xl font-neon">6+</h3>
+          <p className="text-sm md:text-base">
+            Workshops covering AI, blockchain, and more.
+          </p>
         </div>
-        <div className="border border-blue-400 p-6 md:p-10 rounded-lg text-center">
-          <h3 className="text-3xl md:text-4xl font-semibold">2000+</h3>
-          <p className="text-sm md:text-base">Social Media Interactions amplifying our message.</p>
+        <div className="neon-box border-blue-400 text-blue-400">
+          <h3 className="neon-text text-4xl md:text-5xl font-neon">2000+</h3>
+          <p className="text-sm md:text-base">
+            Social Media Interactions amplifying our message.
+          </p>
         </div>
-        <div className="border border-pink-400 p-6 md:p-10 rounded-lg text-center">
-          <h3 className="text-3xl md:text-4xl font-semibold">30%</h3>
-          <p className="text-sm md:text-base">New Participants reflecting diverse talent.</p>
+        <div className="neon-box border-pink-400 text-pink-400">
+          <h3 className="neon-text text-4xl md:text-5xl font-neon">30%</h3>
+          <p className="text-sm md:text-base">
+            New Participants reflecting diverse talent.
+          </p>
         </div>
       </div>
 
@@ -118,7 +136,10 @@ function Home() {
           </h2>
           <div className="relative w-full overflow-hidden">
             <div className="flex items-center">
-              <button className="absolute left-2 md:left-4 bg-black/70 p-2 md:p-4 rounded-full" onClick={goToPrevious}>
+              <button
+                className="absolute left-2 md:left-4 bg-black/70 p-2 md:p-4 rounded-full"
+                onClick={goToPrevious}
+              >
                 <ChevronLeft className="text-white w-6 md:w-10 h-6 md:h-10" />
               </button>
               <div className="overflow-hidden w-full">
@@ -135,13 +156,24 @@ function Home() {
                   }}
                 >
                   {images.map((img, index) => (
-                    <div key={index} className="w-1/3 flex-shrink-0" style={{ flex: `0 0 ${100 / IMAGES_PER_SLIDE}%` }}>
-                      <img src={img} alt={`slide-${index}`} className="w-full h-40 md:h-96 object-cover rounded-lg shadow-lg" />
+                    <div
+                      key={index}
+                      className="w-1/3 flex-shrink-0"
+                      style={{ flex: `0 0 ${100 / IMAGES_PER_SLIDE}%` }}
+                    >
+                      <img
+                        src={img}
+                        alt={`slide-${index}`}
+                        className="w-full h-40 md:h-96 object-cover rounded-lg shadow-lg"
+                      />
                     </div>
                   ))}
                 </motion.div>
               </div>
-              <button className="absolute right-2 md:right-4 bg-black/50 p-2 md:p-4 rounded-full" onClick={goToNext}>
+              <button
+                className="absolute right-2 md:right-4 bg-black/50 p-2 md:p-4 rounded-full"
+                onClick={goToNext}
+              >
                 <ChevronRight className="text-white w-6 md:w-10 h-6 md:h-10" />
               </button>
             </div>
