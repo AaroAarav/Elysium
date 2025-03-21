@@ -20,7 +20,7 @@ function Ambassadors() {
       </motion.p>
 
       <motion.a 
-        href="https://forms.gle/GrKaLrf9RFRbEKLy5" 
+        href="https://forms.gle/LL5xq5agUhS1nTZ5A" 
         target="_blank" 
         rel="noopener noreferrer"
         className="bg-pink-500 text-white px-6 py-3 rounded-xl text-lg font-semibold shadow-lg hover:bg-pink-600 transition duration-300"
