@@ -96,7 +96,7 @@ function Events() {
             <img
               src={event.image}
               alt={event.title}
-              className="w-full h-120 sm:h-90 md:h-90 object-cover rounded-md"
+              className="w-full h-110 sm:h-90 md:h-90 object-cover rounded-md"
             />
             <h2 className="text-lg sm:text-xl font-semibold mt-3 text-purple-400">
               {event.title}
