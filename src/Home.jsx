@@ -215,14 +215,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-4xl mx-auto text-center py-12 px-6  rounded-xl shadow-lg bg-black/80">
-        <h2 className="text-2xl font-adit md:text-3xl font-bold text-purple-400 mb-6">
-          Frequently Asked <span className="text-pink-500">Questions</span>
-        </h2>
-        <p className="text-gray-300 text-sm md:text-lg">
-          Find answers to the most common questions about our event.
-        </p>
-      </div>
+      
     </div>
   );
 }

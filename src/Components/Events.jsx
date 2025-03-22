@@ -82,16 +82,7 @@ function Events() {
       <h1 className="text-4xl sm:text-5xl font-adit mb-10 text-center text-purple-500">
         Upcoming <span className="text-pink-500">Events</span>
       </h1>
-      <button
-              className="relative mt-3 px-4 py-2 uppercase font-semibold text-xs md:text-sm 
-              text-white rounded-md transition-all duration-300 transform hover:scale-105 
-              border-2 border-transparent bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 
-              shadow-[0_0_8px_#3b82f6,0_0_15px_#a855f7,0_0_20px_#ec4899] 
-              hover:shadow-[0_0_10px_#3b82f6,0_0_20px_#a855f7,0_0_25px_#ec4899] 
-              neon-box font-neon animate-pulse"
-            >
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXiZyDrqS502hoapDiWwvDw3R-TQPozkO8-LNeYwdLbbLNw/viewform?usp=send_form" target="_blank">Register Now</a>
-            </button>
+      
 
       <div className="grid pt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-[90%] max-w-7xl">
         {events.map((event, index) => (
@@ -121,6 +112,16 @@ function Events() {
           </motion.div>
         ))}
       </div>
+      <button
+              className="relative px-4 py-2 uppercase font-semibold text-xs md:text-sm 
+              text-white rounded-md transition-all duration-300 transform hover:scale-105 
+              border-2 border-transparent bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 
+              shadow-[0_0_8px_#3b82f6,0_0_15px_#a855f7,0_0_20px_#ec4899] 
+              hover:shadow-[0_0_10px_#3b82f6,0_0_20px_#a855f7,0_0_25px_#ec4899] 
+              neon-box font-neon animate-pulse mt-10"
+            >
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXiZyDrqS502hoapDiWwvDw3R-TQPozkO8-LNeYwdLbbLNw/viewform?usp=send_form" target="_blank">Register Now</a>
+            </button>
     </div>
   );
 }
