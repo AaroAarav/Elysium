@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-black via-purple-950 to-black text-white flex flex-col items-center px-4 py-12 pt-32 sm:pt-40">
+    <div className="w-full min-h-screen  bg-gradient-to-b from-black via-purple-950 to-black text-white flex flex-col items-center px-4 py-12 pt-32 sm:pt-40">
       
       {/* About Elysium Section */}
       <motion.div 
@@ -13,7 +13,7 @@ function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-4xl sm:text-5xl mb-8 font-extrabold text-purple-500">
+        <h1 className="text-4xl sm:text-5xl font-adit mb-8 font-extrabold text-purple-500">
           About <span className="text-pink-500">Elysium</span>
         </h1>
         <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
@@ -31,7 +31,7 @@ function About() {
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-4xl sm:text-5xl mb-8 font-extrabold text-purple-500">
+        <h1 className="text-4xl sm:text-5xl font-adit mb-8 font-extrabold text-purple-500">
           About <span className="text-pink-500">IEEE WIE</span>
         </h1>
         <p className="text-gray-300 text-base sm:text-lg leading-relaxed">

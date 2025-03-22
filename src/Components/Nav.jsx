@@ -47,7 +47,7 @@ function Nav() {
         </a>
 
         <a 
-          href="https://www.linkedin.com/company/ieee-wie-muj/" 
+          href="https://www.linkedin.com/company/elysium-25/posts/?feedView=all" 
           target="_blank" 
           rel="noopener noreferrer"
         >
@@ -99,7 +99,7 @@ function Nav() {
           </a>
 
           <a 
-            href="https://www.linkedin.com/company/ieee-wie-muj/" 
+            href="https://www.linkedin.com/company/elysium-25/posts/?feedView=all" 
             target="_blank" 
             rel="noopener noreferrer"
           >

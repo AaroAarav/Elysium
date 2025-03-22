@@ -12,7 +12,7 @@ function KeyStats() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-4xl sm:text-5xl mb-8 text-left text-purple-500 font-extrabold">
+        <h1 className="text-4xl sm:text-5xl mb-8 text-left font-adit text-purple-500 font-extrabold">
           Elysium 2025: <span className="text-pink-500">Key Stats</span>
         </h1>
         

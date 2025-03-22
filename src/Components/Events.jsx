@@ -14,7 +14,7 @@ const events = [
   {
     id: 3,
     title: "NextTech: Computing Session",
-    image: "/nexttech.jpg",
+    image: "/nexttech.png",
     date: "April 4, 2025",
     time: "3:00 AM - 4:30 PM",
     description:
@@ -41,7 +41,7 @@ const events = [
   {
     id: 6,
     title: "Binary Bloom: Web3 Development Indulgence",
-    image: "/binarybloom.jpg",
+    image: "/Binary Bloom.png",
     date: "April 5, 2025",
     time: "10:00 AM - 11:30 AM",
     description:
@@ -79,11 +79,21 @@ const events = [
 function Events() {
   return (
     <div className="w-full min-h-screen bg-black text-white flex flex-col items-center justify-center pt-24 sm:pt-32 lg:pt-20 lg:pl-35 pb-32 relative overflow-hidden bg-gradient-to-b from-black via-purple-950 to-black">
-      <h1 className="text-4xl sm:text-5xl font-bold mb-10 text-center text-purple-500">
+      <h1 className="text-4xl sm:text-5xl font-adit mb-10 text-center text-purple-500">
         Upcoming <span className="text-pink-500">Events</span>
       </h1>
+      <button
+              className="relative mt-3 px-4 py-2 uppercase font-semibold text-xs md:text-sm 
+              text-white rounded-md transition-all duration-300 transform hover:scale-105 
+              border-2 border-transparent bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 
+              shadow-[0_0_8px_#3b82f6,0_0_15px_#a855f7,0_0_20px_#ec4899] 
+              hover:shadow-[0_0_10px_#3b82f6,0_0_20px_#a855f7,0_0_25px_#ec4899] 
+              neon-box font-neon animate-pulse"
+            >
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXiZyDrqS502hoapDiWwvDw3R-TQPozkO8-LNeYwdLbbLNw/viewform?usp=send_form" target="_blank">Register Now</a>
+            </button>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-[90%] max-w-7xl">
+      <div className="grid pt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-[90%] max-w-7xl">
         {events.map((event, index) => (
           <motion.div
             key={event.id}
@@ -107,16 +117,7 @@ function Events() {
             <p className="text-gray-300 mt-2 text-sm sm:text-base flex-grow">
               {event.description}
             </p>
-            <button
-              className="relative mt-3 px-4 py-2 uppercase font-semibold text-xs md:text-sm 
-              text-white rounded-md transition-all duration-300 transform hover:scale-105 
-              border-2 border-transparent bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 
-              shadow-[0_0_8px_#3b82f6,0_0_15px_#a855f7,0_0_20px_#ec4899] 
-              hover:shadow-[0_0_10px_#3b82f6,0_0_20px_#a855f7,0_0_25px_#ec4899] 
-              neon-box font-neon animate-pulse"
-            >
-              Register Now
-            </button>
+           
           </motion.div>
         ))}
       </div>

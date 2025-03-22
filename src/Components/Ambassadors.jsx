@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Ambassadors() {
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-black via-purple-950 to-black text-white flex flex-col items-center justify-center px-6 py-12 pt-30 sm:pt-20">
-      <h1 className="text-3xl sm:text-5xl font-bold text-purple-500 mb-6 text-center">
+      <h1 className="text-3xl sm:text-5xl font-adit font-bold text-purple-500 mb-6 text-center">
         Community <span className="text-pink-500">Partnership</span>
       </h1>
 

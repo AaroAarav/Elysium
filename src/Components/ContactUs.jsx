@@ -14,7 +14,7 @@ const seniors = [
 function ContactUs() {
   return (
     <div className="w-full lg:pl-35 min-h-screen bg-gradient-to-b from-black via-purple-950 to-black text-white flex flex-col items-center py-10 pt-30 sm:pt-16">
-      <h1 className="text-4xl sm:text-5xl font-bold mb-10 text-center text-purple-500">
+      <h1 className="text-4xl sm:text-5xl font-adit font-bold mb-10 text-center text-purple-500">
         Our <span className="text-pink-500">Team</span>
       </h1>
 
@@ -43,7 +43,7 @@ function ContactUs() {
       </div>
 
       {/* Directors */}
-      <h2 className="text-3xl sm:text-4xl font-bold mt-20 mb-10 text-center text-purple-500">
+      <h2 className="text-3xl sm:text-4xl font-adit font-bold mt-20 mb-10 text-center text-purple-500">
         Dire<span className="text-pink-500">ctors</span>
       </h2>
 
