@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @import "tailwindcss";
 
 
@@ -8,6 +9,11 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+.font-kek{
+  font-family: 'Merriweather', serif;
+  
 }
 
 /* Neon Glow Animation */

@@ -78,7 +78,7 @@ const events = [
 
 function Events() {
   return (
-    <div className="w-full min-h-screen bg-black text-white flex flex-col items-center justify-center pt-24 sm:pt-32 lg:pt-20 lg:pl-35 pb-32 relative overflow-hidden bg-gradient-to-b from-black via-purple-950 to-black">
+    <div className="w-full min-h-screen bg-black text-white flex flex-col items-center justify-center pt-30 sm:pt-35 lg:pt-20 lg:pl-35 pb-32 relative overflow-hidden bg-gradient-to-b from-black via-purple-950 to-black">
       <h1 className="text-4xl sm:text-5xl font-adit mb-10 text-center text-purple-500">
         Upcoming <span className="text-pink-500">Events</span>
       </h1>
@@ -99,13 +99,13 @@ function Events() {
               alt={event.title}
               className="w-full h-110 sm:h-90 md:h-90 object-cover rounded-md"
             />
-            <h2 className="text-lg sm:text-xl font-semibold mt-3 text-purple-400">
+            <h2 className="text-lg sm:text-xl font-semibold font-kek mt-3 text-purple-400">
               {event.title}
             </h2>
-            <p className="text-gray-400 text-sm sm:text-base mt-1">
+            <p className="text-gray-400 text-sm font-kek sm:text-base mt-1">
               📅 {event.date} | ⏰ {event.time}
             </p>
-            <p className="text-gray-300 mt-2 text-sm sm:text-base flex-grow">
+            <p className="text-gray-300 mt-2 text-sm font-kek sm:text-base flex-grow">
               {event.description}
             </p>
            
