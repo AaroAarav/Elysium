@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, CalendarDays, Clock, Hourglass, Timer } from "lucide-react";
 import { Link } from "react-router-dom";
+import { div } from "framer-motion/client";
 
 const images = ["/e1.jpg", "/e2.jpg", "/e3.jpg", "/e4.jpg", "/e5.jpg", "/e6.jpg"];
 
@@ -37,6 +38,7 @@ function Home() {
   const goToNext = () => setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
   return (
+    
     <div className="w-full min-h-screen text-white lg:pl-10 flex flex-col items-center justify-center bg-cover bg-center relative">
       <video autoPlay loop muted playsInline className="absolute top-0 left-0 w-full h-full object-cover -z-1">
         <source src="vid.mp4" type="video/mp4" />

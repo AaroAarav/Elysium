@@ -14,7 +14,7 @@ const events = [
   {
     id: 3,
     title: "NextTech: Computing Session",
-    image: "/nexttech.png",
+    image: "/nexttech.jpg",
     date: "April 4, 2025",
     time: "3:00 AM - 4:30 PM",
     description:
@@ -41,7 +41,7 @@ const events = [
   {
     id: 6,
     title: "Binary Bloom: Web3 Development Indulgence",
-    image: "/Binary Bloom.png",
+    image: "/Binary Bloom.jpg",
     date: "April 5, 2025",
     time: "10:00 AM - 11:30 AM",
     description:
