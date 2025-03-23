@@ -22,7 +22,7 @@ function ContactUs() {
         Conv<span className="text-pink-500">enors</span>
       </h2>
 
-      <div className="max-w-7xl w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-7xl w-[65%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {seniors.map((ppl, index) => (
           <motion.div
             key={ppl.id}
