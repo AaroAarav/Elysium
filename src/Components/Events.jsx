@@ -16,7 +16,7 @@ const events = [
     title: "NextTech: Computing Session",
     image: "/nexttech.jpg",
     date: "April 4, 2025",
-    time: "3:00 AM - 4:30 PM",
+    time: "3:00 PM - 4:30 PM",
     description:
       "Discover the future of computing with quantum technologies and photonics, and explore their power to solve today's most pressing challenges.",
   },
@@ -27,7 +27,7 @@ const events = [
     date: "April 4, 2025",
     time: "4:30 PM - 6:00 PM",
     description:
-      "A hands-on workshop where participants design and build drones and robotics, applying creativity and problem-solving to real-world challenges.",
+      "A hands-on workshop for 3D printing, applying creativity and problem-solving to real-world challenges.",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const events = [
     title: "Pandora: AR/VR Workshop for Innovators",
     image: "/pandora.jpg",
     date: "April 5, 2025",
-    time: "12:00 AM - 2:00 PM",
+    time: "12:00 PM - 2:00 PM",
     description:
       "Step into the immersive world of AR/VR, where participants will create and experiment with technologies reshaping industries and experiences.",
   },
