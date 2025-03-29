@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const events = [
@@ -77,12 +77,30 @@ const events = [
 ];
 
 function Events() {
+  const [isBottom, setIsBottom] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      if (scrollY + windowHeight >= documentHeight - 50) {
+        setIsBottom(true);
+      } else {
+        setIsBottom(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="w-full min-h-screen bg-black text-white flex flex-col items-center justify-center pt-30 sm:pt-35 lg:pt-20 lg:pl-35 pb-32 relative overflow-hidden bg-gradient-to-b from-black via-purple-950 to-black">
       <h1 className="text-4xl sm:text-5xl font-adit mb-10 text-center text-purple-500">
         Upcoming <span className="text-pink-500">Events</span>
       </h1>
-      
 
       <div className="grid pt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-[90%] max-w-7xl">
         {events.map((event, index) => (
@@ -108,22 +126,44 @@ function Events() {
             <p className="text-gray-300 mt-2 text-sm font-kek sm:text-base flex-grow">
               {event.description}
             </p>
-           
           </motion.div>
         ))}
       </div>
-      <button
-              className="relative px-4 py-2 uppercase font-semibold text-xs md:text-sm 
-              text-white rounded-md transition-all duration-300 transform hover:scale-105 
-              border-2 border-transparent bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 
-              shadow-[0_0_8px_#3b82f6,0_0_15px_#a855f7,0_0_20px_#ec4899] 
-              hover:shadow-[0_0_10px_#3b82f6,0_0_20px_#a855f7,0_0_25px_#ec4899] 
-              neon-box font-neon animate-pulse mt-10"
-            >
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXiZyDrqS502hoapDiWwvDw3R-TQPozkO8-LNeYwdLbbLNw/viewform?usp=send_form" target="_blank">Register Now</a>
-            </button>
+
+      {/* Normal button at the bottom */}
+      {isBottom && (
+        <div className="mt-10">
+          <RegisterButton />
+        </div>
+      )}
+
+      {/* Floating button for mobile */}
+      {!isBottom && (
+        <div className="fixed bottom-6 right-6 sm:hidden">
+          <RegisterButton floating />
+        </div>
+      )}
     </div>
   );
 }
+
+const RegisterButton = ({ floating }) => (
+  <button
+    className={`relative px-4 py-2 uppercase font-semibold text-xs md:text-sm 
+      text-white rounded-md transition-all duration-300 transform hover:scale-105 
+      border-2 border-transparent bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 
+      shadow-[0_0_8px_#3b82f6,0_0_15px_#a855f7,0_0_20px_#ec4899] 
+      hover:shadow-[0_0_10px_#3b82f6,0_0_20px_#a855f7,0_0_25px_#ec4899] 
+      neon-box font-neon animate-pulse 
+      ${floating ? "shadow-lg p-3 rounded-full w-16 h-16 flex items-center justify-center" : ""}`}
+  >
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSebXiZyDrqS502hoapDiWwvDw3R-TQPozkO8-LNeYwdLbbLNw/viewform?usp=send_form"
+      target="_blank"
+    >
+      {floating ? "⚡" : "Register Now"}
+    </a>
+  </button>
+);
 
 export default Events;
