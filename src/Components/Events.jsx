@@ -22,7 +22,7 @@ const events = [
   },
   {
     id: 4,
-    title: "FutureSync: Drone Building and Robotics Session",
+    title: "FutureSync: 3D Printing and Robotics Session",
     image: "/futuresync.jpg",
     date: "April 4, 2025",
     time: "4:30 PM - 6:00 PM",
@@ -85,7 +85,7 @@ function Events() {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
-      if (scrollY + windowHeight >= documentHeight - 50) {
+      if (scrollY + windowHeight >= documentHeight - 350) { 
         setIsBottom(true);
       } else {
         setIsBottom(false);
@@ -161,7 +161,7 @@ const RegisterButton = ({ floating }) => (
       href="https://docs.google.com/forms/d/e/1FAIpQLSebXiZyDrqS502hoapDiWwvDw3R-TQPozkO8-LNeYwdLbbLNw/viewform?usp=send_form"
       target="_blank"
     >
-      {floating ? "⚡" : "Register Now"}
+      {floating ? "🔗" : "Register Now"}
     </a>
   </button>
 );
